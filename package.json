@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "echo 'Running prisma generate...' && npx prisma generate --schema=prisma/schema.prisma && echo 'Prisma generate done!' && next build",
+    "build": "echo '=== Starting prisma generate ===' && prisma generate --schema=prisma/schema.prisma && echo '=== Prisma generate done ===' && next build",
     "start": "next start",
     "lint": "eslint"
   },
